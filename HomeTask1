@@ -1,0 +1,256 @@
+№ 2
+package com.company;
+
+import javax.lang.model.element.Name;
+
+/**
+* Created by aroslav on 28.11.16.
+*/
+public class Dog {
+String name;
+String says ;
+public Dog(String name,String says )
+{
+this.name=name;
+this.says=says;
+}
+public void setName(String name)
+{
+this.name=name;
+
+}
+public String getName()
+{
+return name;
+}
+
+public void setSays(String says)
+{
+this.says=says;
+
+}
+public String getSays()
+{
+return says;
+}
+
+}
+____  ___  __ ___ __ ____ ____ __ _
+package com.company;
+import java.util.Scanner;
+
+public class Main {
+
+static Scanner sc = new Scanner(System.in);
+
+public static void main(String[] args) {
+
+Dog p=new Dog("Spot","Ruff!");
+System.out.println(p.getName());
+System.out.println(p.getSays());
+Dog k=new Dog("Scruffy", "Wurf!");
+System.out.println(k.getName());
+System.out.println(k.getSays());
+
+// write your code here
+}
+}
+
+____________________________________________________
+№ 6
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+public static void main(String[] args) {
+Scanner scanner = new Scanner(System.in);
+System.out.println("Ведите a ");
+int a= scanner.nextInt();
+System.out.println("Ведите b ");
+int b= scanner.nextInt();
+
+
+
+double S=(0.5*a)*b;
+double c=c(a,b);
+double P=a+b+c;
+
+System.out.println("S"+" "+"="+" "+" "+S);
+System.out.println("c" +" "+"="+" " + c);
+System.out.println("P" +" "+"="+" " + P);
+System.out.println("S+P"+" "+"="+" "+(P+S));
+
+}
+public static double c(int a, int b)
+{
+return (Math.sqrt(a*a+b*b));
+
+}
+
+}
+____________________________________________________________
+
+
+№ 5
+ package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+public static void main(String[] args) {
+Scanner scanner = new Scanner(System.in);
+System.out.println("Ведите a ");
+int N= scanner.nextInt();
+System.out.println("Ведите b ");
+int p= scanner.nextInt();
+int g=10;
+int f=N-g;
+//______
+if (f<0)
+f=f*(-1);
+//_____
+int j=p-g;
+//_______
+if (j<0)
+j=j*(-1);
+//____
+if (j<f)
+{
+System.out.println(p);
+}
+
+else
+{
+System.out.println(N);
+}
+
+}
+
+}
+____________________________________________________________
+№ 4 package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+public static void main(String[] args) {
+Scanner scanner = new Scanner(System.in);
+System.out.println("Ведите N ");
+int N= scanner.nextInt();
+
+int k=N/10;
+System.out.println(k);
+double p=N%10;
+System.out.println(p);
+
+System.out.println(p+k);
+
+}
+
+}
+____________________________________________________________
+№8 package com.company;
+import javax.swing.*;
+import java.util.Scanner;
+
+public class Main {
+
+public static void main(String[] args) {
+Scanner scanner = new Scanner(System.in);
+System.out.println("Ведите N ");
+long N= scanner.nextLong();
+System.out.println("Год рождения ="+" "+Year(N));
+System.out.println("Вес ="+" "+Ves(N));
+System.out.println("рост ="+" "+rost(N));
+System.out.println("возвраст ="+" "+Age(N));
+//System.out.println(Year(N));
+
+// write your code here
+}
+public static long Year (long N){
+N= ((N-N%10000000)/10000000);
+return N;
+
+// write your code here
+}
+public static long Ves (long N){
+return (N%10000000)/100000;
+
+// write your code here
+}
+public static long rost (long N){
+return (N%100000)/100;
+
+// write your code here
+}
+public static long Age (long N){
+return (N%100);
+
+// write your code here
+}
+}
+____________________________________________________________
+№ 7package com.company;
+import java.util.Scanner;
+public class Main {
+
+public static void main(String[] args) {
+Scanner scanner = new Scanner(System.in);
+// write your code here
+double x1;
+double x2;
+System.out.println("Ведите a ");
+double a= scanner.nextInt();
+System.out.println("Ведите b ");
+double b= scanner.nextInt();
+System.out.println("Ведите c ");
+int c= scanner.nextInt();
+double D=b*b-4*a*c;
+if(D>0)
+{
+System.out.println(x1=((-b)-(Math.sqrt(D)))/2*a);
+System.out.println(x1=((-b)+(Math.sqrt(D)))/2*a);
+
+}
+if(D==0)
+{
+System.out.println(x1=((-b)-(Math.sqrt(D)))/2*a);
+
+}
+if(D<0)
+{
+System.out.println("Корней нет");
+
+}
+
+}
+}
+____________________________________________________________
+№ 3 
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+public static void main(String[] args) {
+Scanner scanner = new Scanner(System.in);
+System.out.println("Ведите N ");
+double N= scanner.nextInt();
+
+if(N%2==0)
+{
+System.out.println("чётное");
+}
+else
+{
+System.out.println("нечётное");
+}
+
+}
+
+}
